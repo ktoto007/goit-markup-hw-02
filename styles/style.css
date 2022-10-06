@@ -11,18 +11,16 @@
     --main-text:Roboto;
     --additional-text:Raleway;
 }
-
+/*Основные стили на страницу*/
 body{
-    font-family: var(--main-text);
+    font-family: var(--main-text), sans-serif;
     color: var(--main-color);
     background-color: var(--main-bg-color);
 }
 
-.header{
-    background-color: var(--header-bg-color);
-}
+/*Стилизация Логотипа*/
 .logo{
-    font-family: var(--additional-text);
+    font-family: var(--additional-text), sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -38,7 +36,7 @@ body{
 .logo-footer{
     color: #FFFFFF;
 }
-
+/*Навигация Сайта*/
 .site-nav .link{
     color: var(--main-color);
 }
@@ -54,13 +52,17 @@ body{
     color: var(--accent-color);
 }
 
+.site-nav .this-page{
+    color: var(--accent-color);
+}
+/*Общии стили для снятия лишнего с ссылок и элементов списка*/
 .list{
     list-style-type: none;
 }
 .link{
     text-decoration: none;
 }
-
+/*Стилизирую Героя*/
 .hero{
     background-color: var(--accent-bg-color);
 }
@@ -79,16 +81,18 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+    font-family: var(--main-text), sans-serif;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--hero-color);
+    cursor: pointer;
 }
 
+/*Секция со скрытым заголовком*/
 .benefits .title{
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -103,12 +107,19 @@ body{
     color: var(--paragraf-color);
 }
 
+/*Секция с доп элементами*/
+.aside .title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/*Секция с командой*/
 .team-section{
     background-color: var(--section-bg-color);
 }
 
 .team-section .title{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -127,10 +138,37 @@ body{
     line-height: 1.19;
     color: var(--paragraf-color);
 }
+/*Фон футера*/
 footer{
     background-color: var(--accent-bg-color);
 }
 
+/*Стили Портфолио*/
+.portfolio-btn{
+    font-family: var(--additional-text), sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--section-bg-color);
+    cursor: pointer;
+}
+.portfolio-btn:focus,
+.portfolio-btn:hover{
+    color: var(--hero-color);
+    background-color: var(--accent-color);
+}
+.portfolio .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
 
-
-
+.portfolio-text{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-color);
+}
