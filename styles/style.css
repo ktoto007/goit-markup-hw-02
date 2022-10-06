@@ -1,8 +1,136 @@
 :root{
-    --main-bg-color:#F5F5F5;
+    --main-bg-color:#FFFFFF;
     --accent-bg-color:#2F303A;
-    --header-bg-color:#FFFFFF;
+    --section-bg-color:#F5F5F5;
+    
     --main-color: #212121;
     --accent-color:#2196F3;
     --paragraf-color:#757575;
+    --hero-color:#FFFFFF;
+
+    --main-text:Roboto;
+    --additional-text:Raleway;
 }
+
+body{
+    font-family: var(--main-text);
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+}
+
+.header{
+    background-color: var(--header-bg-color);
+}
+.logo{
+    font-family: var(--additional-text);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo-primary{
+    color: var(--accent-color);
+}
+.logo-secondary{
+    color: #000000;
+}
+
+.logo-footer{
+    color: #FFFFFF;
+}
+
+.site-nav .link{
+    color: var(--main-color);
+}
+
+.connection .link{
+    color: var(--paragraf-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.connection .link:hover,
+.connection .link:focus{
+    color: var(--accent-color);
+}
+
+.list{
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+}
+
+.hero{
+    background-color: var(--accent-bg-color);
+}
+
+.hero .title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+}
+
+.hero .btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--hero-color);
+}
+
+.benefits .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.benefits .text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-color);
+}
+
+.team-section{
+    background-color: var(--section-bg-color);
+}
+
+.team-section .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-section .secondary-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;    
+    letter-spacing: 0.03em;
+}
+
+.team-section .text{
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--paragraf-color);
+}
+footer{
+    background-color: var(--accent-bg-color);
+}
+
+
+
+
