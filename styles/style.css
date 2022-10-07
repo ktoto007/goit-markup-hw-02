@@ -2,6 +2,7 @@
     --main-bg-color:#FFFFFF;
     --accent-bg-color:#2F303A;
     --section-bg-color:#F5F5F5;
+    --team-section-bg-color:#F5F4FA;
     
     --main-color: #212121;
     --accent-color:#2196F3;
@@ -39,10 +40,18 @@ body{
 /*Навигация Сайта*/
 .site-nav .link{
     color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .connection .link{
     color: var(--paragraf-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -77,7 +86,7 @@ body{
     color: var(--hero-color);
 }
 
-.hero .btn{
+.hero-btn{
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -91,6 +100,10 @@ body{
     cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus{
+    background-color: #188CE8;
+}
 /*Секция со скрытым заголовком*/
 .benefits .title{
     font-size: 14px;
@@ -116,7 +129,7 @@ body{
 }
 /*Секция с командой*/
 .team-section{
-    background-color: var(--section-bg-color);
+    background-color: var(--team-section-bg-color);
 }
 
 .team-section .title{
@@ -139,19 +152,35 @@ body{
     color: var(--paragraf-color);
 }
 /*Фон футера*/
-footer{
+.footer{
     background-color: var(--accent-bg-color);
+}
+
+.footer-adres .link{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-color);
+}
+
+.footer-adres .footer-link{
+    color: var(--hero-color);
+}
+.footer-adres .link:hover,
+.footer-adres .link:focus{
+    color: var(--accent-color);
 }
 
 /*Стили Портфолио*/
 .portfolio-btn{
-    font-family: var(--additional-text), sans-serif;
+    font-family: var(--main-text), sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
-    background-color: var(--section-bg-color);
+    background-color: var(--team-section-bg-color);
     cursor: pointer;
 }
 .portfolio-btn:focus,
